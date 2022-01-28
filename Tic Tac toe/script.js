@@ -3,7 +3,6 @@ let reset = document.getElementById("reset");
 let usersTurn = "X";
 let over = false;
 let count = 0;
-let isWinning = true;
 let resultShower = document.querySelector(".info");
 let draww = document.querySelector(".in");
 
@@ -37,8 +36,6 @@ const checkwinner = () => {
       boxtxt[e[0]].innerText !== ""
     ) {
       over = true;
-      let g=gameB();
-      g.remove()
       resultShower.style.display = "block";
       
     }
