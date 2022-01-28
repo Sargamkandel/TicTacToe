@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Galdeano', sans-serif;
+    box-sizing: border-box;
+}
+*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#txt{
+    font-size: 19px;
+}
+.container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,13vw);
+    grid-template-rows: repeat(3,13vw);
+}
+.info{
+    display: none;
+    font-size: 18px;
+    border: 1px solid rgb(17, 126, 26);
+    padding: 6px 8px;
+    position: relative;
+    top: 10px;
+    color: rgb(12, 160, 12);
+    border-radius: 4px;
+    background-color: rgb(225, 255, 225);
+}
+.box{
+    background-color: rgb(56, 53, 238);
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.box:hover{
+    font-size: 56px;
+    transition: 1s;
+
+}
+#me{
+    margin-top: 10px;
+}
+h1{
+    padding: 20px;
+}
+#reset{
+    visibility: hidden;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    left: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(56, 53, 238);
+}
+.in{
+    display: none;
+    font-size: 18px;
+    border: 1px solid rgb(158, 27, 27);
+    padding: 6px 8px;
+    position: relative;
+    top: 10px;
+    color: rgb(202, 41, 35);
+    border-radius: 4px;
+    background-color: rgb(255, 230, 230);
+}
+@media (max-width:790px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,18vw);
+        grid-template-rows: repeat(3,18vw);
+    }
+    .box{
+        font-size: 35px;
+    }
+    .box:hover{
+        font-size: 40px;
+    }
+}
